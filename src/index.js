@@ -3,35 +3,54 @@ import ReactDOM from 'react-dom/client';
 import './index.css';
 import App from './App';
 import reportWebVitals from './reportWebVitals';
-import Home from './pages/home';
-import Crypto from './pages/crypto';
-import Trending from './pages/trending';
-import Favorite from './pages/favorite';
 import {
   createBrowserRouter,
   RouterProvider,
 } from "react-router-dom";
-
+import Home from './pages/home';
+import Crypto from './pages/crypto';
+import Trending from './pages/trending';
+import CryptoDetails from './components/CryptoDetails';
+import Favorite from './pages/favorite';
 
 const router = createBrowserRouter([
   {
     path: "/",
     element: <Home />,
-    children: [
+    children:[
       {
-        path: "/",
+        path:"/",
         element: <Crypto />,
-      
+        children: [
+          {
+            path:":coinId",
+            element: <CryptoDetails />
+          }
+        ]
       },
       {
         path:"/trending",
-        element: <Trending />
+        element: <Trending />,
+        children: [
+          {
+            path:":coinId",
+            element: <CryptoDetails />
+          }
+        ]
       },
       {
-        path: "/favorite",
-        element: <Favorite />
+        path:"/favorite",
+        element: <Favorite />,
+        children: [
+          {
+            path:":coinId",
+            element: <CryptoDetails />
+          }
+        ]
       }
-    ],
+    ]
+
+
   },
 ]);
 

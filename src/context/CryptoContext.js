@@ -109,7 +109,6 @@ export const CryptoProvider = ({ children }) => {
     <CryptoContext.Provider
       value={{
         cryptoData,
-        getCryptoData,
         searchData,
         getSearchResult,
         setCoinSearch,

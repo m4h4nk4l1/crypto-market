@@ -12,7 +12,11 @@ module.exports = {
 white: "#fff",
 cyan: "#14ffec",
 red: "#d6436e",
-green: "#25da72", 
+green: "#25da72",
+yellow: "#2b6777",
+black: "#030e12",
+neon:"#5bccf6",
+peach:"#ef9273" 
     },
     fontSize:{
       sm: "14px", md: "18px", lg: "24px", xl: "32px", base: "16px"
