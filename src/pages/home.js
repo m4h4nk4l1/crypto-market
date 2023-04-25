@@ -12,7 +12,7 @@ const Home = () => {
       <TrendingProvider>
         <StorageProvider>
           <main
-            className="w-full dark:bg-yellow dark:text-black h-full flex flex-col first-letter:
+            className="w-full dark:bg-neon dark:text-black h-full flex flex-col first-letter:
     content-center items-center relative text-white font-nunito dark:border-black
     "
           >

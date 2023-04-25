@@ -39,9 +39,9 @@ const SearchInput = ({ handleSearch }) => {
           onChange={handleInput}
           value={searchText}
           className="w-full rounded bg-gray-200
-        placeholder:text-gray-100 pl-2
+        placeholder:text-white pl-2
         required outline-0 border border-transparent 
-        focus:border-cyan
+        focus:border-white
          "
           placeholder="search here..."
         />
@@ -52,7 +52,7 @@ const SearchInput = ({ handleSearch }) => {
       {searchText.length > 0 ? (
         <ul
           className="absolute top-11 right-0 w-96 h-96 rounded
-overflow-x-hidden py-2 bg-gray-200 bg-opacity-60 
+overflow-x-hidden py-2 bg-gray-100 bg-opacity-60 
 backdrop-blur-md scrollbar-thin scrollbar-thumb-gray-100 scrollbar-track-gray-200
 "
         >

@@ -38,9 +38,9 @@ const PerPage = () => {
         max={250}
         ref={inputRef}
         placeholder="10"
-        className="w-16 rounded bg-gray-200 placeholder:text-gray-100
+        className="w-16 rounded bg-black placeholder:text-white text-white
      pl-2 required outline-0 border border-transparent 
-     focus:border-cyan leading-4
+     focus:border-white leading-4
      "
       />
       <button type="submit" className="ml-1 cursor-pointer">
@@ -119,7 +119,7 @@ const Pagination = () => {
             <li>
               <button
                 onClick={prev}
-                className="ouline-0 hover:text-cyan  rounded-full w-8 h-8 flex items-center justify-center bg-gray-200 mx-1.5"
+                className="ouline-0 hover:text-cyan  rounded-full w-8 h-8 flex items-center justify-center text-white bg-gray-300 mx-1.5"
               >
                 {" "}
                 {page - 1}{" "}
@@ -139,7 +139,7 @@ const Pagination = () => {
             <li>
               <button
                 onClick={next}
-                className="ouline-0 hover:text-cyan  rounded-full w-8 h-8 flex items-center justify-center bg-gray-200 mx-1.5"
+                className="ouline-0 hover:text-cyan text-white rounded-full w-8 h-8 flex items-center justify-center bg-gray-200 mx-1.5"
               >
                 {page + 1}
               </button>
@@ -151,7 +151,7 @@ const Pagination = () => {
               {" "}
               <button
                 onClick={multiStepNext}
-                className="ouline-0 hover:text-cyan  rounded-full w-8 h-8 flex items-center justify-center text-lg    "
+                className="ouline-0 hover:text-cyan text-white rounded-full w-8 h-8 flex items-center justify-center text-lg    "
               >
                 ...
               </button>
@@ -162,7 +162,7 @@ const Pagination = () => {
             <li>
               <button
                 onClick={() => setPage(TotalNumber)}
-                className="ouline-0 hover:text-cyan  rounded-full w-8 h-8 flex items-center justify-center bg-gray-200 mx-1.5"
+                className="ouline-0 hover:text-cyan text-white rounded-full w-8 h-8 flex items-center justify-center bg-gray-200 mx-1.5"
               >
                 {TotalNumber}
               </button>

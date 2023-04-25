@@ -24,12 +24,12 @@ const Filters = () => {
 
   return (
     <div
-      className=" w-full h-12 border-2 dark:border-black border-gray-100 rounded-lg
+      className=" w-full h-12 border-2 dark:border-gray-200 text-white border-gray-100 rounded-lg
       flex items-center justify-between relative
       "
     >
       <Search />
-      <div className="flex mr-7 dark:bg-white dark:text-black">
+      <div className="flex mr-7">
         <form
           className="relative flex items-center font-nunito
           mr-12
@@ -38,7 +38,7 @@ const Filters = () => {
         >
           <label
             htmlFor="currency"
-            className="relative flex justify-center items-center
+            className="relative text-white flex justify-center items-center
           mr-2 font-bold
           "
           >
@@ -50,21 +50,21 @@ const Filters = () => {
             ref={currencyRef}
             placeholder="usd"
             className="w-16 rounded bg-gray-200 placeholder:text-gray-100
-     pl-2 required outline-0 border border-transparent 
-     focus:border-cyan leading-4
+     pl-2 required outline-0 border border-transparent text-white
+     focus:border-white leading-4
      "
           />
           <button type="submit" className="ml-1 cursor-pointer">
-            <img src={submitIcon} alt="submit" className="w-full h-auto" />
+            <img src={submitIcon} alt="submit" className="w-full  bg-gray-200 h-auto" />
           </button>
         </form>
 
         <label className="relative flex justify-center items-center">
-          <span className="font-bold mr-2">sort by: </span>
+          <span className="font-bold text-white mr-2">sort by: </span>
           <select
             name="sortby"
             className="rounded bg-gray-200 text-base 
-         pl-2 pr-10 py-0.5 leading-4 capitalize focus:outline-0
+         pl-2 pr-10 py-0.5 leading-4 text-white capitalize focus:outline-0
          "
             onClick={handleSort}
           >
